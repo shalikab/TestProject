@@ -15,6 +15,9 @@ public class SingleTonClass {
     	}
     	return obj;
     }
+    
+
+    
     public void display() {
     	System.out.println("Singleton class Example");
     }
@@ -24,6 +27,11 @@ public class SingleTonClass {
         //we have logic for only one object creation
 		SingleTonClass myobject = SingleTonClass.objectCreationMethod();
 		myobject.display();
+	    SingleTonClass n = new SingleTonClass();
+	    n.display();
+	    SingleTonClass nm = new SingleTonClass();
+	    nm.display();
+
 
 	}
 
